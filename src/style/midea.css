@@ -1,0 +1,200 @@
+
+/* Adaptação para largura de tela de 1200px */
+@media screen and (max-width: 1200px) {
+    .header-container h1 {
+        font-size: 20px;
+    }
+    /* section -04 */
+    .section04-container h1 {
+        font-size: 32px;
+    }
+    /* section-05 */
+    .hospedagem-contner__conteudo h1 {
+        font-size: 28px;
+    }
+    .hospedagem-item h3 {
+        font-size: 16px;
+    }
+
+    .hospedagem-item p {
+        font-size: 12px;
+    }
+    
+}
+
+@media (min-width: 600px) {
+    .section06-container {
+        flex-direction: row; /* Alterando para linha em telas maiores que 600px */
+    }
+
+    .form-container {
+        max-width: 50%; /* Utilizando metade da largura disponível */
+        margin-right: 20px;
+        margin-bottom: 0; /* Removendo o espaçamento inferior */
+    }
+
+    .image-container {
+        max-width: 50%; /* Utilizando metade da largura disponível */
+    }
+
+    .image-container img {
+        width: 100%; /* Ajustando a largura da imagem para ocupar 100% do contêiner pai */
+        height: auto; /* Mantendo a proporção da altura */
+        border-radius: 5px;
+    }
+    /* footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex: 1;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-language {
+        margin-top: 20px;
+    }
+}
+
+/* Adaptação para largura de tela de 768px */
+@media screen and (max-width: 768px) {
+    .header-container {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header-container h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .header__conteudo {
+        margin: 0;
+    }
+
+    /* section-01 */
+    .section01-container {
+        height: 600px;
+    }
+
+    .sec01__conteudo-container {
+        width: 90%;
+        margin: auto;
+    }
+    /* section-02 */
+    .section02-container {
+        height: 200px;
+    }
+    /* section-03 */
+    .section03-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* section-04 */
+    .section04-container h1 {
+        font-size: 28px;
+    }
+    .destino-contner__conteudo{
+        width: 70%;
+        height: 50%;
+    }
+    /* section-05 */
+       
+    .hospedagem-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .hospedagem-contner__conteudo h1 {
+        font-size: 24px;
+    }
+
+    .hospedagem-item h3 {
+        font-size: 14px;
+    }
+
+    .hospedagem-item p {
+        font-size: 12px;
+    }
+}
+
+/* Adaptação para largura de tela de 400px */
+@media screen and (max-width: 400px) {
+    .header-container h1 {
+        font-size: 18px;
+    }
+    /* section-01 */
+    .section01-container {
+        height: 400px;
+    }
+
+    .sec01__conteudo-container {
+        width: 90%;
+        margin: auto;
+    }
+    /* section-02 */
+    .section02-container {
+        height: 250px;
+    }
+    /* }section-03 */
+    .section03-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* section-04 */
+    .section04-container h1 {
+        font-size: 24px;
+    }
+    /* section-05 */
+    .hospedagem-contner__conteudo h1 {
+        font-size: 20px;
+    }
+
+    .hospedagem-item h3 {
+        font-size: 14px;
+    }
+
+    .hospedagem-item p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .section04-container h1 {
+        font-size: 20px;
+    }
+    /* section-05 */
+    .hospedagem-contner__conteudo h1 {
+        font-size: 18px;
+    }
+
+    .hospedagem-item h3 {
+        font-size: 12px;
+    }
+
+    .hospedagem-item p {
+        font-size: 10px;
+    }
+}
+
+@media scope and (max-width:450){
+    
+    .sec01__conteudo-container h2 {
+        font-size: 20px;
+        padding-bottom: 2.5px;
+    }
+    
+    .sec01-span {
+        color: #1a2f4d;
+        font-size: 30px;
+    }
+    
+    .sec01__conteudo-container p {
+        font-size: 15px;
+    }
+    
+}

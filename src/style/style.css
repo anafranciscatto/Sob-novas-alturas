@@ -1,0 +1,502 @@
+.header-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-container h1 {
+    font-size: 24px;
+    padding-left: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.header__conteudo {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links a {
+    padding: 5px 6px;
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.nav-links a:hover {
+    color: #FFF9EF;
+}
+
+/* -------------SECTION-01---------------- */
+.section01-container {
+    position: relative;
+    height: 800px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    background-image: url('https://media.istockphoto.com/id/1256296335/pt/foto/a-romantic-couple-on-summer-vacation-enjos-the-sunset-over-the-mediterranean-sea-by-the-pool.jpg?s=612x612&w=0&k=20&c=e7679Xiyt4OVSO729yHlJsVsn6j6bFEiwqsFdgm7VSo=');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-attachment: fixed; /* Adiciona o efeito parallax */
+}
+
+.section01-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.sec01__conteudo-container {
+    width: 740px;
+    height: 267px;
+    position: relative;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec01__conteudo-container h2 {
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+
+.sec01-span {
+    color: #1a2f4d;
+    font-size: 50px;
+}
+
+.sec01__conteudo-container p {
+    font-size: 18px;
+}
+
+.sec01__gradiente {
+    /* gradiente de divisão*/
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(transparent, #FFF9EF);
+}
+/* -------------SECTION-02---------------- */
+.section02-container {
+    max-width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px; /* Adiciona algum espaçamento lateral */
+}
+
+.section02-container h4 {
+    font-size: 22px;
+    color: #10203b;
+}
+
+.sec02-pesquisa_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.sec02-pesquisa_container form {
+    display: flex;
+    align-items: stretch; 
+    width: 100%;
+}
+
+.sec02-pesquisa_container input {
+    flex: 1; 
+    border: 2px solid #1a2f4d;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px;
+}
+
+.sec02-pesquisa_container button {
+    background-color: #1a2f4d;
+    color: #FFF9EF;
+    border: 2px solid #1a2f4d;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease; 
+}
+
+.sec02-pesquisa_container button:hover {
+    background-color: transparent;
+    border-color: 1.5px solid #10203b;
+    color: #10203b;
+}
+/* -----------------section-03---------------- */
+.txt-sec03 {
+    text-align: center;
+}
+
+/* Estilo para a seção de cards */
+.section03-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.card {
+    background-color: #2d3e4f;
+    color: #FFF;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #1a2f4d;
+}
+
+.card img {
+    width: 100%;
+    height: 220px; /* Altura ajustada para corresponder à da seção 05 */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem; /* Tamanho da fonte ajustado para corresponder à da seção 05 */
+    color: #FFF;
+    margin: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.card p {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem; /* Tamanho da fonte ajustado para corresponder à da seção 05 */
+}
+
+.saiba-mais-btn {
+    background-color: #73C7E3;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.saiba-mais-btn:hover {
+    background-color: #24585c;
+}
+/* -----------------SECTION-04------------------- */
+.section04-container h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 40px;
+}
+.sec04-destino__contner {
+    position: relative;
+    height: 500px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    background-image: url('https://media.istockphoto.com/id/154918211/pt/foto/cidade-de-dubai-burj-dubai.jpg?s=612x612&w=0&k=20&c=vhbv_5nlRtYrqecvBAk1zghtc0C2JyNec9xPYtRw40w=');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed; /* Adiciona o efeito parallax */
+}
+.destino__contner02{/*egito*/
+    background-image: url('https://media.istockphoto.com/id/1306137962/pt/foto/woman-sitting-in-the-desert-near-the-giza-pyramids.jpg?s=612x612&w=0&k=20&c=hDFUngjloJ4lJpYxAW5CYa0SIevEqDYoTEdjEAn4Hes=');
+}
+.destino__contner03{/*paris*/
+    background-image: url('https://media.istockphoto.com/id/1336449613/pt/foto/paris-aerial-panorama-with-river-seine-and-eiffel-tower-france-romantic-summer-holidays.jpg?s=612x612&w=0&k=20&c=riGwXr9LmmyubeNUi_fbwAaGXfOQnVDiQXb8yL1_o5c=');
+}
+.destino__contner04{/* Toquio */
+    background-image: url('https://media.istockphoto.com/id/484915982/pt/foto/akihabara-t%C3%B3quio.jpg?s=612x612&w=0&k=20&c=xwkpj6Y3uFI1eXRElt7yTBdGkrV_GWsObcpHY3cVs34=');
+}
+.sec04-destino__contner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.destino-contner__conteudo{
+    width: 40%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.548);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+.destino-contner__conteudo {
+    transition: transform 0.9s ease;
+}
+
+.destino-contner__conteudo:hover {
+    transform: scale(1.05); 
+}
+
+.destino-contner__conteudo {
+    transform: scale(1);
+}
+
+hr{
+    width: 100%;
+    color: black;
+}
+.destino-contner__conteudo h1{
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.destino-contner__conteudo h5{
+    color: white;
+    margin: 0;
+    padding: 5px;
+    background-color: #1a2f4d;
+    border-radius: 7px;
+}
+
+/* --------------SECTION-05----------- */
+/* Estilo para a seção de hospedagem */
+.sec05-hospedagem__contner {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.hospedagem-contner__conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hospedagem-contner__conteudo h1 {
+    font-size: 40px;
+}
+.hospedagem-contner__conteudo h2 {
+    color: #333;
+}
+
+.hospedagem-contner__conteudo p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a grade de hospedagem */
+.hospedagem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Estilo para cada item de hospedagem */
+.hospedagem-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(75, 85, 141, 0.377);
+    text-align: left;
+}
+
+.hospedagem-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.hospedagem-item h3 {
+    color: #292626;
+}
+
+.hospedagem-item p {
+    color: #665a5a;
+    margin-bottom: 10px;
+}
+
+.hospedagem-item a {
+    display: inline-block;
+    background-color: #10203b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 19px;
+}
+
+.hospedagem-item a:hover {
+    background-color: transparent;
+    color: #10203b;
+    border: 1px solid #10203b;
+}
+/* --------------section-06----------------- */
+.section06-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+#contact-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1a2f4d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #73C7E3;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+/* ----------FOOTER---------- */
+.footer-container {
+    background-color: #10203b;
+    color: #fff;
+    padding: 70px 0 40px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #CF8A3F;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-language {
+    flex: 1;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-language p {
+    margin-bottom: 10px;
+}
+
+.footer-language a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-language a:hover {
+    text-decoration: underline;
+}
